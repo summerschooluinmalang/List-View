@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TutorialListview</string>
+    <string-array name="teams">
+        <item>Indonesia</item>
+        <item>Singapura</item>
+        <item>Malaysia</item>
+        <item>Brunei</item>
+        <item>Timor Leste</item>
+        <item>Papua Nugini</item>
+    </string-array>
+</resources>
