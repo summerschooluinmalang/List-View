@@ -3,6 +3,7 @@ package id.technologue.appsl.tutoriallistview;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -11,7 +12,7 @@ import org.w3c.dom.Text;
  * Created by jauharibill on 7/5/2018.
  */
 
-public class SecondActivity extends Activity {
+public class SecondActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);

@@ -15,17 +15,16 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_item);
 
         String[] teams = getResources().getStringArray(R.array.teams);
 
-        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.list, teams));
+        this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, R.id.item, teams));
 
         ListView lv = getListView();
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 String team = ((TextView) view).getText().toString();
 
                 Intent il = new Intent(getApplicationContext(), SecondActivity.class);
